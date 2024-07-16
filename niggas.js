@@ -44,17 +44,39 @@ console.log(tinderUser.hasOwnProperty("logink")); // answer will be in boolean
 
 
 let  tutor = {
-    tutorName: "ajay",
-    tutorId: 9,
-    joiningDate:26/4/89,
-    timing:"morning"
+   
 }
 
-const {tutorName: name} = tutor
+// const {tutorName: name} = tutor
 
-console.log(name);
+// console.log(name);
 
 
-{
-    is thiss json shit going on nigga
+//     is thiss json shit going on nigga
+// }
+
+
+// {
+//     tutorName: "ajay",
+//     tutorId: 9,
+//     joiningDate:26/4/89,
+//     timing:"morning"
+
+// }
+
+
+let addition = function(a,b){
+    plus  = a + b;
+    return plus;
 }
+
+console.log(`the sum of numbers is ${addition(5,5)}`);
+
+let wordPrinting = function(userName){
+    for(i = 0; i<=userName.length ; i++){
+        console.log(userName[i]);
+    }
+}
+
+console.log(wordPrinting("umesh_yadav"));
+console.log("the addition is: ",addition(4,5));
