@@ -36,10 +36,10 @@ const obj3 = Object.assign({},obj1,obj2)  // assigning
 const obj4 = {...obj1,...obj3,...obj2}
 // console.log(obj4);
 
-console.log(Object.keys(tinderUser)); // this will be a arry and will print variables (name,id,login)
-console.log(Object.values(tinderUser)); // this will be a arry and will print variables values 
-console.log(Object.entries(tinderUser)); // this will be a arry and will print variable name : variable value
-console.log(tinderUser.hasOwnProperty("logink")); // answer will be in boolean
+// console.log(Object.keys(tinderUser)); // this will be a arry and will print variables (name,id,login)
+// console.log(Object.values(tinderUser)); // this will be a arry and will print variables values 
+// console.log(Object.entries(tinderUser)); // this will be a arry and will print variable name : variable value
+// console.log(tinderUser.hasOwnProperty("logink")); // answer will be in boolean
 
 
 
@@ -70,13 +70,19 @@ let addition = function(a,b){
     return plus;
 }
 
-console.log(`the sum of numbers is ${addition(5,5)}`);
+// console.log(`the sum of numbers is ${addition(5,5)}`);
 
 let wordPrinting = function(userName){
     for(i = 0; i<=userName.length ; i++){
-        console.log(userName[i]);
+        // console.log(userName[i]);
     }
 }
 
-console.log(wordPrinting("umesh_yadav"));
-console.log("the addition is: ",addition(4,5));
+// console.log(wordPrinting("umesh_yadav"));
+// console.log("the addition is: ",addition(4,5));
+
+
+let cart = function(...num){
+    return num;
+}
+console.log(cart(400,200,100,900));
