@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #635985; color:#18122B">
+    <ul class="lan">
+        <li>JavaScript</li>
+        <li>TypeScript</li>
+        <li>Mojo</li>
+    </ul>
+</body>
+<script>
+    // how to add
+    function  addLanguage(langName){
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`
+        document.querySelector('.lan').appendChild(li);
+    }
+    //addLanguage("python");
+    //addLanguage("Java")
+
+    function addOpti(langName){
+        const li = document.createElement("li")
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.lan').appendChild(li);
+    }
+    addOpti("java");
+
+   // const secondLang = document.querySelector("li:nth-child(2)");
+    // secondLang.innerHTML = "Mojo"
+    //const newLi = document.createElement("li")
+    newLi.textContent = "Mojo";
+    //secondLang.replaceWith(newLi)
+    //console.log(secondLang);
+
+    // const firstLang = documet.querySelector("li:first-child")
+    // const new1L = document.createElement("li");
+    // new1L.textContent = "TypeScript"
+    // firstLang.replaceWith(new1L)
+    // console.log(firstLang);
+
+    // how to remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove();
+</script>
+</html> 

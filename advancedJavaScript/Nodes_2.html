@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes with chai</title>
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    
+</body>
+<script>
+    let div = document.createElement('div')
+    console.log(div);
+    div.className = "diviti"
+    div.id = Math.ceil(Math.random()*10);
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "23px"
+    //div.innerText = "BBL DRIZZY DRAKE AND 5_3 KENDRICK LAMAR";
+    let addText = document.createTextNode("BBL DRIZZY DRAKE AND 5_3 KENDRICK LAMAR")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+</script>
+</html>

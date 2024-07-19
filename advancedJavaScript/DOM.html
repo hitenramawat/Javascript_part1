@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM learning</title>
 </head>
-<body style="background-color: rgba(9, 8, 8, 0.765); color: aliceblue;">
+<body style="background-color: #212121; color: aliceblue;">
 
-    <div class="bg-black">
+    <!-- <div class="bg-black">
        <h1 class="heading" id="title">
         Dom learning with hitesh choudry
        </h1>
@@ -23,7 +23,34 @@
         <li class="lies">four</li> 
        </ul>
        
+    </div> -->
+
+
+    <div class="parent" style="color">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Friday</div>
     </div>
 
 </body>
+<script>
+   let parent = document.querySelector(".parent");
+   //console.log(parent);
+  // console.log(parent.children);
+   //console.log(parent.children[1]);
+
+//    for(let i = 0 ; i<parent.children.length; i++){
+//     console.log(parent.children[i].innerHTML);
+//    }
+    parent.children[0].style.color ="orange"
+    //console.log(parent.firstElementChild);
+   // console.log(parent.lastElementChild);
+
+    const toParent = document.querySelector(".day")
+    //console.log(toParent);
+   // console.log(toParent.parentElement);
+    //console.log(toParent.nextElementSibling);
+    console.log("NODES: ",parent.childNodes);
+</script>
 </html>

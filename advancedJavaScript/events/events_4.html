@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: antiquewhite;">
+    <h1>Some Random Images</h1>
+    <div>
+        <ul id="Images">
+            <li><img src="box1_image.jpg" width="200px" id="towel"></li>       
+            <li><img src="box2_image.jpg" width="200px" id="brush"></li>
+            <li><img src="box3_image.jpg" width="200px" id="chair"></li>
+            <li><img src="box4_image.jpg" width="200px" id="samsung"></li>
+        </ul> 
+    </div>   
+</body>
+<script>
+    // document.getElementById("towel").onclick = function() {
+    //     window.alert("towel clicked");
+    // }
+// pointerEevent :- type,timestamp,defaultPrevented,target
+// toElement,srcElement,currentTarget
+// clientX , clientY ,screenX , screenY
+// altkey , ctrlkey , shiftkey , keycode
+
+    // let img = document.getElementById('Images').addEventListener("click",function(e){
+    //     console.log("clicked inside the ul");
+    // },false);
+
+    // document.getElementById("towel").addEventListener("click",function(e){
+    //     console.log("towel clicked ");
+    //     e.stopPropagation();
+    // }, false)
+
+    
+// when we write false at the end then in console we got towel(towel clicked) first and then (clicked insidethe ul) but when we use true instedd of false first we get (clicked inside the ul) and then (towel clicked) because true :- propogates from top to bottom 
+
+    const ul =document.querySelector("#Images");
+    function hide(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === "IMG"){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        } else{
+            window.alert("please click on right area")
+        }
+//instead of using tagName we can also use localName it'll give us <img> = img and <li> = li
+// but in othercase (tagName) it give us  <img> = IMG and <li> = LI
+
+       
+    }
+    ul.addEventListener("click",hide,false)
+    //removeIt.parentNode.removeChild(removeIt)
+
+    // In function hide console.log(e.target) when we use this then it only removes the image but it doesn't
+    // remove the li(in which it is placed) so there will be a dot remain
+    // so for removing the entire li we can use parentNode so itll remove it entirly
+</script>
+</html>

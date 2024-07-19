@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>you got nothing G</h1>
+    <button id="stopit">Stop</button>
+</body>
+<script>
+    let changeText = function(){
+        document.querySelector("h1").
+        innerHTML = "best Java script";
+    } 
+    const changeMe = setTimeout(changeText,2000)
+    const press = document.querySelector("#stopit").addEventListener("click",function(){
+        let clear = clearTimeout(changeMe);
+        console.log(clear);
+    })
+
+    
+    // const button = document.getElementById("stopit")
+    // button.addEventListener("click", function(){
+    //    let changeC = document.querySelector("body").style.backgroundColor = "grey"
+    //    console.log(changeC);
+    // }) // this thing is made by me cry cry cry
+</script>
+</html>
