@@ -56,3 +56,12 @@ const addtwo = function(num){ // because addtwo(variable) can't access that
     return num + 2;
 }
 
+
+let ul = document.createElement("ul")
+document.body.appendChild(ul);
+
+let li1 = document.createElement("li");
+let li2 = document.createElement("li");
+ul.appendChild(li1)
+ul.appendChild(li2)
+console.log(ul);
