@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;">
+    
+</body>
+<script>
+    const requestUrl = 'https://randomuser.me/api/'
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET",requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(data);
+            console.log(data.email);
+        }
+    }
+    xhr.send()
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.javascript
+2.HTTP server
+3.backend with javascript
+4.Node.javascript
+5.SQL and noSQL
+6.React.javascript
+7.typeScript
+8.Next.javascript
+this is going to be my learning process can you suggest me, it is in correct sequence or not 
+or should i learn in different sequence.
