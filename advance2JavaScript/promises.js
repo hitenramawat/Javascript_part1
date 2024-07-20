@@ -72,10 +72,22 @@ async function consumePromiseFive(){
 
 new Promise((resolve,reject) => {
     let url ='https://randomuser.me/api/'
-    resolve(url)
+    //resolve(url)
 }).then((ul) => {
     console.log(ul);
     return ul.location;
 }).catch((y) => {
     console.log(y);
 })
+
+fetch('https://randomuser.me/api/').then((user) => {
+    console.log(user);
+    return user.json()
+}).then((data) => {
+    console.log(data);
+})
+.catch((error) => {
+    console.log(error);
+})
+
+// what is fetch() :-
